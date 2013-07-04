@@ -4,123 +4,118 @@
 
 @implementation UIView (Frames)
 
-#pragma mark - Set Accessor
-
-- (void)setOrigin:(CGPoint)loc
+-(void) setOrigin:(CGPoint)loc
 {
     CGRect rc = self.frame;
     rc.origin = loc;
     self.frame = rc;
 }
 
-- (void)setX:(CGFloat)x
+-(void) setX:(CGFloat)x
 {
     CGRect rc = self.frame;
     rc.origin.x = x;
     self.frame = rc;
 }
 
-- (void)setY:(CGFloat)y
+-(void) setY:(CGFloat)y
 {
     CGRect rc = self.frame;
     rc.origin.y = y;
     self.frame = rc;
 }
 
-- (void)setSize:(CGSize)sz
+-(void) setSize:(CGSize)sz
 {
     CGRect rc = self.frame;
     rc.size = sz;
     self.frame = rc;
 }
 
-- (void)setWidth:(CGFloat)w
+-(void) setWidth:(CGFloat)w
 {
     CGRect rc = self.frame;
     rc.size.width = w;
     self.frame = rc;
 }
 
-- (void)setHeight:(CGFloat)h
+-(void) setHeight:(CGFloat)h
 {
     CGRect rc = self.frame;
     rc.size.height = h;
     self.frame = rc;
 }
 
-- (void)setCenterY:(CGFloat)y
+-(void) setCenterY:(CGFloat) y
 {
     CGPoint pt = self.center;
     pt.y = y;
     self.center = pt;
 }
 
-- (void)setCenterX:(CGFloat)x
+-(void) setCenterX:(CGFloat) x
 {
     CGPoint pt = self.center;
     pt.x = x;
     self.center = pt;
 }
 
-
-#pragma mark - Get Accessor
-
-- (CGPoint)origin
+-(CGPoint) origin
 {
     return self.frame.origin;
 }
 
-- (CGFloat)x
+-(CGFloat) x
 {
     return self.frame.origin.x;
 }
 
-- (CGFloat)y
+-(CGFloat) y
 {
     return self.frame.origin.y;
 }
 
-- (CGFloat)top
+-(CGFloat) top
 {
     return self.frame.origin.y;
 }
 
-- (CGFloat)left
+-(CGFloat) left
 {
     return self.frame.origin.x;
 }
 
-- (CGFloat)right
+-(CGFloat) right
 {
     return self.frame.origin.x + self.frame.size.width;
 }
 
-- (CGFloat)bottom
+-(CGFloat) bottom
 {
     return self.frame.origin.y + self.frame.size.height;
 }
 
-- (CGSize)size
+-(CGSize) size
 {
     return self.frame.size;
 }
 
-- (CGFloat)height
+-(CGFloat) height
 {
     return self.frame.size.height;
 }
 
-- (CGFloat)width
+-(CGFloat) width
 {
     return self.frame.size.width;
 }
 
-- (CGFloat)centerX
+-(CGFloat) centerX
 {
     return self.center.x;
 }
 
-- (CGFloat)centerY
+-(CGFloat) centerY
 {
     return self.center.y;
 }

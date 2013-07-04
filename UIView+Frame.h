@@ -3,18 +3,24 @@
 #import <Foundation/Foundation.h>
 
 @interface UIView (FrameExt)
-
-@property (nonatomic) CGFloat x;
-@property (nonatomic) CGFloat y;
-@property (nonatomic) CGFloat width;
-@property (nonatomic) CGFloat height;
-@property (nonatomic) CGSize size;
-@property (nonatomic) CGPoint origin;
-@property (nonatomic) CGFloat centerX;
-@property (nonatomic) CGFloat centerY;
-@property (nonatomic, readonly) CGFloat top;
-@property (nonatomic, readonly) CGFloat bottom;
-@property (nonatomic, readonly) CGFloat left;
-@property (nonatomic, readonly) CGFloat right;
-
+-(void) setOrigin:(CGPoint)loc;
+-(void) setX:(CGFloat)x;
+-(void) setY:(CGFloat)y;
+-(void) setSize:(CGSize)sz;
+-(void) setWidth:(CGFloat)w;
+-(void) setHeight:(CGFloat)h;
+-(void) setCenterX:(CGFloat) x;
+-(void) setCenterY:(CGFloat) y;
+-(CGPoint) origin;
+-(CGFloat) x;
+-(CGFloat) y;
+-(CGFloat) left;
+-(CGFloat) top;
+-(CGFloat) bottom;
+-(CGFloat) right;
+-(CGSize) size;
+-(CGFloat) height;
+-(CGFloat) width;
+-(CGFloat) centerX;
+-(CGFloat) centerY;
 @end
